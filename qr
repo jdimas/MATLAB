@@ -1,0 +1,4 @@
+<?php 
+
+$contents = file_get_contents("https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=hola");
+echo '<img src="data:image/png;base64,'. base64_encode($contents) .'">';
